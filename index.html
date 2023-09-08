@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header id="header" class="header el">
+    <!-- <header id="header" class="header el">
         <button class="menu-btn">
             <span class="material-symbols-outlined menu">
                 menu
@@ -40,14 +40,14 @@
                 </span>
             </div>
         </a>
-        <!-- <a class="links" href="">Career
+        <a class="links" href="">Career
             <div class="icon">
                 <span class="material-symbols-outlined">
                 work
                 </span>
             </div>
-        </a> -->
-    </header>
+        </a>
+    </header> -->
     <main class="container">
         <section class="box" id="about">
             <div class="window-tools">
@@ -75,25 +75,15 @@
                 </span>
             </div>
             <div class="profile-header">
-                <div class="personal-info grid-item">
-                    <div class="image">
-                        <img src="./img/prof-1.png" class="personal-info-image">
-                    </div>
-                    <div class="info">
-                        <h2>Personal Info</h2>
-                        <p><b class="bold-text">Name:</b> Rúben Gomes</p>
-                        <p><b class="bold-text">Date of birth:</b> 10/10/2001</p>
-                        <p><b class="bold-text">Country:</b> Portugal</p>
-                        <p><b class="bold-text">City:</b> Braga</p>
-                    </div>
+                <div class="image">
+                    <img src="./img/prof-1.png" class="personal-info-image">
                 </div>
-                <div class="skills">
-                    <div class="info">
-                        <h2>Languages</h2>
-                        <p><b class="bold-text">Portuguese:</b> Native</p>
-                        <p><b class="bold-text">English:</b>Advanced</p>
-                        <p><b class="bold-text">Spanish:</b> Basic</p>
-                    </div>
+                <div class="info">
+                    <h2>Personal Info</h2>
+                    <p><b class="bold-text">Name:</b> Rúben Gomes</p>
+                    <p><b class="bold-text">Date of birth:</b> 10/10/2001</p>
+                    <p><b class="bold-text">Country:</b> Portugal</p>
+                    <p><b class="bold-text">City:</b> Braga</p>
                 </div>
             </div>
             <div class="specs">
@@ -182,7 +172,7 @@
             <div class="studies-grid">
                 <div class="timeline">
                     <ul>
-                        <li>
+                        <li onclick="showDiv('hs')">
                             <span>2016 - 2019</span>
                             <div class="content">
                                 <h3>Secundary School of Carlos Amarante</h3>
@@ -191,7 +181,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="showDiv('gy')">
                             <span>2019 - 2020</span>
                             <div class="content">
                                 <h3>Gap Year</h3>
@@ -200,7 +190,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="showDiv('un')">
                             <span>2020 - 2023</span>
                             <div class="content">
                                 <h3>Polytechnic Institute of Cávado and Ave</h3>
@@ -209,7 +199,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li onclick="showDiv('ua')">
                             <span>2023 - Today</span>
                             <div class="content">
                                 <h3>Uapgo</h3>
@@ -221,7 +211,51 @@
                     </ul>
                 </div>
                 <div class="timeline-specs">
-
+                    <div id="high-school">
+                        <h3 class="main-title">Sciences and Technologies</h2>
+                    
+                        <div class="border"></div>
+                        <br />
+                        <div class="indented">
+                            <p>A course based on the study of fields such as Mathematics, Biology, Geology, Physics, Chemistry and Technology.</p>
+                            <p>It is a 3 year course intended to prepare students for university and entrance exams.</p>
+                            <br />
+                            <h3>Main Focuses:</h3>
+                            <br />
+                            <svg>
+                                <circle class="bg" cx="57" cy="57" r="52" />
+                                <circle class="meter-1" cx="57" cy="57" r="52" />
+                            </svg>
+                            <p><b class="bold-text">Mathematics</b></p>
+                            <br />
+                            <svg>
+                                <circle class="bg" cx="57" cy="57" r="52" />
+                                <circle class="meter-2" cx="57" cy="57" r="52" />
+                            </svg>
+                            <p><b class="bold-text">Biology & Geology</b></p>
+                            <br />
+                            <svg>
+                                <circle class="bg" cx="57" cy="57" r="52" />
+                                <circle class="meter-3" cx="57" cy="57" r="52" />
+                            </svg>
+                            <p><b class="bold-text">Physics & Chemistry</b></p>
+                            <br />
+                            <svg>
+                                <circle class="bg" cx="57" cy="57" r="52" />
+                                <circle class="meter-4" cx="57" cy="57" r="52" />
+                            </svg>
+                            <p><b class="bold-text">Technology</b></p>
+                        </div>
+                    </div>
+                    <div id="gap-year">
+                        <h3>Gap Year</h3>
+                    </div>
+                    <div id="university">
+                        <h3>University</h3>
+                    </div>
+                    <div id="uapgo">
+                        <h3>Uapgo</h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -264,7 +298,7 @@
         <div class="box">5</div>
         <div class="box">6</div> -->
     </main>
-    <!-- <aside class="sidebar el"><h2>Sidebar</h2></aside> -->
+    <aside class="sidebar el"><h2>Sidebar</h2></aside>
     <footer class="footer el">
         <div class="windows-home">
             <img src="./img/Windows-Start-Orb.png" class="windows-img">
